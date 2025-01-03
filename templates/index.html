@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="static/index.css">
+    <!-- JavaScript link -->
+    <script src="static/index.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div id="image-container-1" onclick="selectImage(1)" class="image-container">
+            <input type="file" id="file-input-1" accept="image/*" style="display: none;">
+            <img id="preview-1" style="display: none; max-width: 100%; height: auto;">
+            <span id="placeholder-1">Click to select image 1</span>
+        </div>    
+        <div id="image-container-2" onclick="selectImage(2)" class="image-container">
+            <input type="file" id="file-input-2" accept="image/*" style="display: none;">
+            <img id="preview-2" style="display: none; max-width: 100%; height: auto;">
+            <span id="placeholder-2">Click to select image 2</span>
+        </div>
+    </div>
+    <button onclick="analyse()" id="analyse">Analyse</button>
+    <div id="response"></div>
+</body>
+</html>
