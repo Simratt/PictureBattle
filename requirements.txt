@@ -1,5 +1,4 @@
-flask
-openai
-gunicorn 
-python-dotenv
-dotenv
+flask>=3.1.0
+openai>=1.59.0
+gunicorn>=23.0.0
+python-dotenv>=1.0.0
